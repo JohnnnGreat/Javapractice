@@ -45,6 +45,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Serialize sv = new Serialize();
+        sv.serializeObject();
+        sv.deserializeObject();
+
         RequestFunc rf = new RequestFunc();
         rf.getDetails();
 
@@ -53,9 +57,9 @@ public class Main {
         String x = file.ReadFile("src/demo.txt");
         System.out.println(x);
 
-        Car carOne = new Car();
+       /* Car carOne = new Car();
         carOne.setCarName("Toyota");
-        System.out.println(carOne.getCarName());
+        System.out.println(carOne.getCarName());*/
         /*        DIRECTION = 3000;      */
 
         String name = "john";
